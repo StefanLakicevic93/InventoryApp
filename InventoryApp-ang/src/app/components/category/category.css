@@ -1,0 +1,103 @@
+.category-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* sve po sredini stranice */
+  text-align: center;
+}
+
+.message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.category-header {
+  display: flex;
+  flex-direction: column; /* naslov iznad inputa */
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.category-header h1 {
+  color: #17a2b8;
+  margin-bottom: 20px;
+}
+
+.add-cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* razmak između inputa i dugmeta */
+}
+
+.add-cat input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.add-cat button {
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-cat button:hover {
+  background-color: #138496;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 60%; /* da ne bude preširoko */
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  margin: 10px 0;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: #2f4f4f;
+  font-weight: 550;
+  transition: background-color 0.2s;
+}
+
+.category-item:hover {
+  background-color: #f0fafa;
+}
+
+.category-actions button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #17a2b8;
+  transition: background-color 0.2s;
+}
+
+.category-actions button:hover {
+  background-color: #138496;
+}
+
+.category-actions button:last-child {
+  background-color: #dc3545;
+}
+
+.category-actions button:last-child:hover {
+  background-color: #c82333;
+}

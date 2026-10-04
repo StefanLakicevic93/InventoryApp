@@ -1,0 +1,21 @@
+<div class="dashboard-layout">
+  <div class="sidebar">
+    <h1 class="ims">IMS</h1>
+    <ul class="nav-links">
+      <li *ngIf="isAuth()"><a routerLink="/dashboard">Dashboard</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/transaction">Transactions</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/category">Category</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/product">Product</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/supplier">Supplier</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/purchase">Purchase</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/sell">Sell</a></li>
+      <li *ngIf="isAuth()"><a routerLink="/profile">Profile</a></li>
+      <li *ngIf="!isAuth()"><a routerLink="/login">Login</a></li>
+      <li *ngIf="!isAuth()"><a routerLink="/register">Register</a></li>
+      <li *ngIf="isAuth()"><a (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
